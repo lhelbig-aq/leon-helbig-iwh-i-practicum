@@ -1,0 +1,17 @@
+html 
+  head 
+    title= title 
+    link(rel='stylesheet', href='/css/style.css')
+  body 
+    a(href="/") Back to homepage
+    h1 Add a new Movie 
+    .form-wrapper
+      form(method='POST', action='/update-cobj')
+        label(for='name') Name: 
+        input(type='text', name='name', id='name', required)
+        label(for='franchise') Franchise: 
+        input(type='text', name='franchise', id='franchise', required)
+        label(for='best_character') Best Character:
+        input(type='text', name='best_character', id='best_character', required)
+        input(type='submit', value='Submit')
+      

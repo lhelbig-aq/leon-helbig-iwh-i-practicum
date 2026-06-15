@@ -1,0 +1,19 @@
+html
+  head 
+    title= title 
+    link(rel='stylesheet', href='/css/style.css')
+  body 
+    a(href="/update-cobj") Add to this table 
+    h1 Movies 
+    table 
+      thead 
+        tr 
+          th Name 
+          th Franchise 
+          th Best Character 
+      tbody 
+        each record in data
+          tr 
+            td= record.properties.name 
+            td= record.properties.franchise 
+            td= record.properties.best_character 
